@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Правила игры с созвездиями для двух игроков">
+  <title>Правила · Созвездия</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="rules.css">
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="brand-mark">✦</span><div><strong>СОЗВЕЗДИЯ</strong><small>Игра на графе · северное небо</small></div></div>
+    <a id="backToGame" class="rules-back" href="./">Вернуться к карте</a>
+  </header>
+  <main class="rules-page">
+    <section class="rules-hero">
+      <div class="eyebrow">ПАМЯТКА УЧАСТНИКА</div>
+      <h1>Правила игры</h1>
+      <p>Играют два человека один на один. Решайте задачи созвездий, захватывайте соседние территории и набирайте больше баллов, чем соперник. Ограничения по времени нет.</p>
+      <div class="rule-facts"><div><strong>2</strong><span>игрока</span></div><div><strong>43</strong><span>созвездия</span></div><div><strong>3</strong><span>карточки на руках</span></div><div><strong>∞</strong><span>времени на игру</span></div></div>
+    </section>
+
+    <section class="rules-grid" aria-label="Основные правила">
+      <article class="rule-card"><div class="rule-kicker">СТАРТ</div><h2>С противоположных сторон</h2><p>Один игрок начинает с созвездия №3 «Малый Конь», другой — с №19 «Малый Пёс». На стартовую задачу даётся <strong>3 попытки</strong>. После её решения открываются соседние созвездия.</p></article>
+      <article class="rule-card"><div class="rule-kicker">ПЕРЕМЕЩЕНИЕ</div><h2>Идите по границам</h2><p>Новую задачу можно брать только в созвездии, которое соприкасается с уже захваченной вами территорией — общей стороной или углом. Занятую соперником или серую область брать нельзя.</p></article>
+      <article class="rule-card"><div class="rule-kicker">КАРТОЧКИ</div><h2>До трёх одновременно</h2><p>После стартовой задачи держите на руках три задачи, если столько доступно. После решения, сброса или изъятия карточки выберите новую доступную соседнюю задачу.</p></article>
+      <article class="rule-card"><div class="rule-kicker">ОТВЕТЫ</div><h2>Сдавайте только ответ</h2><p>На каждую обычную задачу даётся <strong>2 попытки</strong>. Верный ответ подтверждает жюри. Если оба игрока решают одну задачу, территория достаётся тому, чей верный ответ жюри приняло первым.</p></article>
+    </section>
+
+    <section class="rules-section"><div class="eyebrow">ЦЕНА ТЕРРИТОРИЙ</div><h2>Сколько дают созвездия</h2><div class="zone-grid"><div class="zone bronze-zone"><span>БРОНЗА</span><strong>5</strong><p>Созвездия у небесного экватора, №1–27</p></div><div class="zone silver-zone"><span>СЕРЕБРО</span><strong>8</strong><p>Умеренный пояс, №28–42</p></div><div class="zone gold-zone"><span>ЗОЛОТО</span><strong>12</strong><p>Малая Медведица, №43</p></div></div><p class="section-note">Захваченная область окрашивается в цвет игрока. Подсказки вычитаются из его общего счёта.</p></section>
+
+    <section class="rules-grid rules-grid-bottom" aria-label="Дополнительные правила">
+      <article class="rule-card"><div class="rule-kicker">ПОДСКАЗКА</div><h2>После первой ошибки</h2><p>Подсказку можно попросить только после первой неверной попытки. Она стоит <strong>−2 балла</strong>. Жюри может отказать, если подсказка слишком прямая.</p></article>
+      <article class="rule-card"><div class="rule-kicker">СБРОС</div><h2>Можно отказаться от задачи</h2><p>Карточку можно сбросить в любой момент, даже если попытки ещё остались. Повторно взять её уже нельзя, но сопернику она остаётся доступной, пока не заблокирована.</p></article>
+      <article class="rule-card"><div class="rule-kicker">БЛОКИРОВКА</div><h2>Серая территория</h2><p>Если оба игрока потеряли возможность решать задачу — сбросили её или исчерпали попытки, — область становится серой. Серую территорию больше нельзя взять.</p></article>
+      <article class="rule-card"><div class="rule-kicker">ФИНИШ</div><h2>Когда ходов больше нет</h2><p>Игра завершается, когда у обоих игроков не осталось карточек на руках и доступных соседних задач. Побеждает игрок с большим итоговым счётом.</p></article>
+    </section>
+    <div class="rules-cta"><p>Готовы начать? Откройте карту своего противостояния.</p><a id="backToGameBottom" href="./">К карте игры</a></div>
+  </main>
+  <script>for(const id of ['backToGame','backToGameBottom'])document.getElementById(id).href='./'+location.search;</script>
+</body>
+</html>
