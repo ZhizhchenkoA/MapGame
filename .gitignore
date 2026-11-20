@@ -1,0 +1,43 @@
+# Локальные материалы, заполненные задачи и ответы
+/tasks/private/
+/tasks/build/
+tasks/
+.vscode
+# Скомпилированные PDF и служебные файлы LaTeX
+*.pdf
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+*.xdv
+*.dvi
+*.ps
+*.pdfsync
+*.synctex
+*.ilg
+*.ind
+*.idx
+*.glo
+*.gls
+*.acn
+*.acr
+*.alg
+*.ist
+*.auxlock
+
+# Временные файлы редакторов
+*~
+*.swp
+*.swo
